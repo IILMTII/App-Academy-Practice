@@ -1,0 +1,16 @@
+def Sort(array)
+sorted=false
+    while !sorted
+        sorted =true
+    (0..array.length-2).each_with_index do |num,i|
+        if num>array[i+1]
+            array[i],array[i+1]=array[i+1],array[i]
+            sorted=false
+        end
+    end
+    end
+ return array
+end
+
+
+p Sort([2,8,5,2,6])
